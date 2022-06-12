@@ -11,9 +11,40 @@
 
 ---
 
-1. [Web Browser](./Web_Browser)
-1. [HTML](./HTML)
-2. [CSS](./CSS)
-3. [Javascript](./Javascript)
-4. [React](./React)
+<details>
+<summary>Web Browser</summary>
+<div markdown="1">
+
+1. [브라우저의 동작원리는 무엇일까요](./Web_Browser/브라우저의_동작원리는_무엇일까요.md)
+
+</div>
+</details>
+
+<details>
+<summary>HTML</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>CSS</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>Javascript</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>React</summary>
+<div markdown="1">
+
+</div>
+</details>
 
