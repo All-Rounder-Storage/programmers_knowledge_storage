@@ -43,23 +43,23 @@
     [Folder Name | Name] - 포스팅 제목
     
     - 간략한 포스팅 내용
-    - [편하게보기](fork한 repo 내 md 파일 링크)
+    - [편하게보기](Fork한 repo 내 md 파일 링크)
     
     ex1)
     [Backend | Alex] - Spring DI, 그 속으로
     
     - Spring에 핵심기술인 의존성주입(DI)에 대한 원리와 장점을 설명합니다.
-    - [편하게보기](포크한 repo 내 md파일 주소를 걸어주세요!)
+    - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     
     ex2)
     [Mobile | Fia] - Flutter에 대해 알아보자
     
     - 크로스 플랫폼에 대응하기 위한 기술인 Flutter에 관한 정리 내용입니다.
-    - [편하게보기](포크한 repo 내 md파일 주소를 걸어주세요!)
+    - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     
     ex3)
     [Frontend | Jade] - Javascript의 실행 컨텍스트란 무엇일까요?
     
     - Javascript의 모든 작동원리의 베이스가 되는 실행 컨텍스트에 대해 알아봅니다.
-    - [편하게보기](포크한 repo 내 md파일 주소를 걸어주세요!)
+    - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     ```
