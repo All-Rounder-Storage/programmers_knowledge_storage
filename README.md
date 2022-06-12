@@ -1,7 +1,7 @@
 # 성장하는 개발자들의 지식 창고
 
 
-## 👥 Member
+## 👥 Members
 | Backend | Frontend | Mobile                                                                                                       |
 | --- | --- |--------------------------------------------------------------------------------------------------------------|
 [<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100">](https://github.com/giibeom)| [<img src="https://avatars.githubusercontent.com/u/61952198?v=4" width="100">](https://github.com/dbwjd5864) | [<img src="https://avatars.githubusercontent.com/u/49216939?v=4" width="100">](https://github.com/leeHana21) |
@@ -9,7 +9,6 @@
 
 ## ✨ About Programmers Knowledge Storage
 
----
 - 단순한 글 채우기가 아닌 배움을 통한 포스팅을 목표로 해주세요 🌱
 - ‘배운 내용을 타인에게 설명하기’ 방법으로 지식을 온전히 ‘내것으로 만들기’를 목표로 해주세요 👨🏻‍🏫
 - 어느 누구든 All-rounder storage 글을 통해 쉽고, 명확하게 문제를 해결할 수 있도록 설명해주세요 💡
@@ -18,7 +17,6 @@
 
 ## 💻 Progress
 
----
 - PR은 요일 상관없이 자유롭게 올리며, 리뷰어들은 매주 일요일까지 모든 리뷰를 마치고 approve를 진행합니다.
 - 궁금한 부분은 사소해도 꼭 리뷰를 남기고, 작성자는 모르는 내용일 경우 찾아서 답변 합니다.
 - 틀린 글은 없기 때문에 부드러운 리뷰를 지향합니다.
@@ -28,7 +26,6 @@
     
 ## 📚 Posting 및 PR
 
----
 - Posting 제목
 
     ```markdown
