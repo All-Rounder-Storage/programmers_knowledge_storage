@@ -135,7 +135,7 @@
       - Static Header Table : http/2 헤더로 자주 사용되는 key-value 값 쌍을 저장하고 있는 테이블
       - Dynamic Header Table : 한번 전송 또는 수신한 header 의 key-value 값을 임의로 저장하는 역할을 수행하는 테이블
       huffman Encoding
-      - 통계를 활용해 압축하는 기 법
+      - 통계를 활용해 압축하는 기법
       - 자주 나오는 문자열 순서대로 짧은 비트맵으로 매핑하여 데이터를 압축하는 기법이다.
       - JPEG MPEG 압축 방식에 이용되고 있다.
       ```
