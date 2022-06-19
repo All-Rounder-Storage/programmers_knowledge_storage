@@ -187,4 +187,15 @@ SSL은 클라이언트와 서버간에 _*핸드셰이크*_ 를 통해 인증이 
   - 핸드셰이크가 완료되고, 세션 키를 이용해 통신을 진행한다.
   +) 클라이언트와의 연결이 끊겼을때는 사용하던 session key를 폐기한다.
 
+<br>
+
+Reference
+
+---
+
+- [HTTP에서 HTTPS로 전환하기 위한 완벽 가이드](https://webactually.com/2018/11/16/http%EC%97%90%EC%84%9C-https%EB%A1%9C-%EC%A0%84%ED%99%98%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C/)
+- [SSL이란?, SSL과 TLS 정의 및 차이](https://kanoos-stu.tistory.com/46#:~:text=TLS%20%EB%8A%94%20SSL%EC%9D%98%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8,%EB%B3%80%EA%B2%BD%EC%9D%84%20%EC%9C%84%ED%95%B4%EC%84%9C%EC%98%80%EB%8B%A4%EA%B3%A0%20%ED%95%9C%EB%8B%A4.)
+- [[SSL 제대로 이해하기 4탄] SSL 동작 과정](https://lbm93.tistory.com/18)
+- [[Security] 공개키(Public key) vs 개인키(private key), 대칭키 vs 비대칭키](https://spidyweb.tistory.com/310)
+
 
