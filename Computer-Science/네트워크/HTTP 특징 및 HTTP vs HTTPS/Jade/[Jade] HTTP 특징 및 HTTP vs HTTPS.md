@@ -87,7 +87,7 @@ HTTP(Hypertext Transfer Protocol): TCP/IP 위에서 작동하는 인터넷상에
 
 ### HTTPS
 ***
-HTTPS(Hypertext Transfer Protocol Secure): 기존의 HTTP 프로토콜에 보안을 위한 SSL(Secure Socket Layer)과 TSL(Transport Layer Security)을 추가한 프로토콜이다.
+HTTPS(Hypertext Transfer Protocol Secure): 기존의 HTTP 프로토콜에 보안을 위한 SSL(Secure Socket Layer)과 TLS(Transport Layer Security)을 추가한 프로토콜이다.
 
 #### 대칭키 암호화와 비대칭키 암호화
 
