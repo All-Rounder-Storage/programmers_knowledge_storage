@@ -69,7 +69,8 @@
 ### OPTIONS
 ```markdown
 - 대상 리소스의 통신 가능 메서드를 설명한다.
-- **주로 CORS(Cross-Origin Resource Sharing) 에서 사용한다. **(CORS : cross-origin 요청을 안전하게 수행할 수 있도록 하는 메커니즘)**
+- 주로 **CORS(Cross-Origin Resource Sharing)** 에서 사용한다. 
+  **(CORS : cross-origin 요청을 안전하게 수행할 수 있도록 하는 메커니즘)**
 ```
 
 ### CONNECT
