@@ -126,7 +126,7 @@ ES6에서는 새로운 변수 선언 키워드인 let 과 const 를 도입하였
    > 즉, 런타임 이전에 자바스크립트 엔진에 의해 암묵적으로 선언 단계가 먼저 실행되지만, 초기화 단계는 변수 선언문에 도달했을 때 실행된다.
    > let 키워드로 선언한 변수는 스코프의 시작 시점부터 초기화 단계 시작 지점 (변수 선언문)까지 변수를 참조할 수 없다. ➡️ **일시적 사각지대**
    
-   [사진]
+   ![IMG_B8FB02E77DDB-1](https://user-images.githubusercontent.com/61952198/175774246-d13bfa05-301a-4156-996e-c7e1fd31dd7e.jpeg)
    
    ```Javascript
    console.log(x); // ReferenceError: x is not defined
