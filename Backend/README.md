@@ -75,7 +75,8 @@
 <summary>Spring Principle</summary>
 <div markdown="1">
 
-1. [Spring 웹 MVC, 그 속으로](SpringPrinciple/Spring%20웹%20MVC,%20그%20속으로.md)
+1. [MVC 패턴, 그 속으로](SpringPrinciple/MVC%20패턴,%20그%20속으로.md)
+2. [Spring 웹 MVC, 그 속으로](SpringPrinciple/Spring%20웹%20MVC,%20그%20속으로.md)
 
 </div>
 </details>
