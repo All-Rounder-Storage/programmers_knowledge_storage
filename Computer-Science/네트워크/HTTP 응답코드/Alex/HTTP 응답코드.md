@@ -113,11 +113,11 @@ Content-Type: application/json
 
   `모두 기능은 동일하지만 요청메서드를 변경할지 안할지에 따라 나눠짐!`
 
-  | 코드 | 설명 |
-      | --- | --- |
-  | 302 Found | Redirect 시 요청 메서드가 GET으로 변하고, 본문이 제거될 수 있음 |
-  | 303 See Other | Redirect 시 요청 메서드가 GET으로 변경 |
-  | 307 Temporary Redirect | Redirect 시 요청 메서드와 본문 유지 (요청 메서드를 변경하면 안됨!) |
+	| 코드 | 설명 |
+	| --- | --- |
+	| 302 Found | Redirect 시 요청 메서드가 GET으로 변하고, 본문이 제거될 수 있음 |
+	| 303 See Other | Redirect 시 요청 메서드가 GET으로 변경 |
+	| 307 Temporary Redirect | Redirect 시 요청 메서드와 본문 유지 (요청 메서드를 변경하면 안됨!) |
 
 #### PRG란?
 
