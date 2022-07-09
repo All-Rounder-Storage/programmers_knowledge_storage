@@ -23,20 +23,21 @@
 
 ### Programming Basic
 <details>
-<summary>Java 8</summary>
+<summary>Java Deep Dive</summary>
 <div markdown="1">
+
+#### Java의 정석
+1. [Java, 그 속으로](Java/Java의%20정석/Java,%20그%20속으로.md)
+
+#### Java 8
+
+
+#### 이펙티브 자바
 
 
 </div>
 </details>
 
-<details>
-<summary>Kotlin</summary>
-<div markdown="1">
-
-
-</div>
-</details>
 
 <details>
 <summary>Clean Code</summary>
@@ -66,6 +67,15 @@
 
 </div>
 </details>
+
+<details>
+<summary>Kotlin</summary>
+<div markdown="1">
+
+
+</div>
+</details>
+
 
 <br>
 
