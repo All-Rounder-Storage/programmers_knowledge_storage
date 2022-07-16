@@ -19,64 +19,64 @@
 ## Oauth 2.0 용어를 알아보자
 
 ```markdown
-<b>Resource Server</b>
+Resource Server
 - oauth 서비스를 제공하고 자원을 관리하는 서버 (ex. google, naver, etc.. )
 
-<b>Resource Owner, 자원 소유자</b>
+Resource Owner, 자원 소유자
 - resource server 의 계정을 소유하고 있는 사용자
 
-<b>Authorization Server, 권한 서버</b>
+Authorization Server, 권한 서버
 - Client Resource Server 가 가진 자원을 사용할 수 있게 인증 및 토큰을 발생시켜주는 서버
 
-<b>Access Token</b>
+Access Token
 - 자원 서버에 자원을 요청할 수 있는 token
 
-<b>Refresh Token</b>
+Refresh Token
 - Access Token 만료 시 권한 서버에 접근 토큰을 요청할 수 있는 토큰
 ```
 
 ## 인증 절차의 흐름도
 ![OAUTH FLOW](https://user-images.githubusercontent.com/49216939/179351431-e6bfba28-0483-42cc-955e-a0a3ac0be977.png)
 
-1. 클라이언트 -> 자원 소유자 : <b>인증 요청<b>
+1. 클라이언트 -> 자원 소유자 : 인증 요청
     - 이 때 인증의 방식은 아래의 4가지 중 하나로 이용한다.
     
-2. 자원 소유자 -> 클라이언트 : <b>인증 권한 부여</b>
+2. 자원 소유자 -> 클라이언트 : 인증 권한 부여
 
-3. 클라이언트 -> 권한 서버 : <b>부여받은 인증 권한으로 access token 발급 요청</b>
+3. 클라이언트 -> 권한 서버 : 부여받은 인증 권한으로 access token 발급 요청
 
-4. 권한 서버 -> 클라이언트 : <b>유효성 검사 후 access token 발급</b>
+4. 권한 서버 -> 클라이언트 : 유효성 검사 후 access token 발급
 
-5. 클라이언트 -> 자원 서버 : <b>access token 으로 자원 소유자의 자원에 접근 요청</b>
+5. 클라이언트 -> 자원 서버 : access token 으로 자원 소유자의 자원에 접근 요청
 
-6. 자원 서버 -> 클라이언트 : <b>access token 검사 후 통과 시 요청에 대한 응답 전송</b>
+6. 자원 서버 -> 클라이언트 : access token 검사 후 통과 시 요청에 대한 응답 전송
 
 ## 인증 절차의 종류
 ```markdown
-<b>Authorization Code Grant</b>
+Authorization Code Grant
 - 리소스 접근을 위해 서버에서 받은 권한 코드로 리소스에 대한 액세스 토큰을 받는 방식
 - 다른 절차 중 보안성이 가장 높아서, 가장 복잡함에도 불구하고 가장 많이 쓰인다.
-
+```
 ![AUTH CODE GRANT](https://user-images.githubusercontent.com/49216939/179352677-3bed27bc-0c11-4f28-937e-8f893250fe90.png)
-
-<b>Implicit Grant</b>
+```markdown
+Implicit Grant
 - 권한 코드를 교환하는 단계가 있다.
 - access Token 을 즉시 반환 받아서 이를 인증에 이용하는 방식이다.
-
-![implict grant](https://user-images.githubusercontent.com/49216939/179352767-48a5ded1-113c-494c-bd0e-8aa504106210.png)
-  
-<b>Resource Owner Password Credentials Grant</b>
+```
+![implicit grant](https://user-images.githubusercontent.com/49216939/179352767-48a5ded1-113c-494c-bd0e-8aa504106210.png)
+```markdown
+Resource Owner Password Credentials Grant
 - resource owner 가 id/pw 를 전달 받아서 resource server 에 인증하는 방식
 - 신뢰할 수 있는 client 로만 가능한 방식이다.
-
+```  
 ![password credentials](https://user-images.githubusercontent.com/49216939/179353017-50ff7a99-f48e-4311-8e1e-8b599d4b8576.png)
 
-<b>Client Credentials Grant</b>
+```markdown
+Client Credentials Grant
 - 클라이언트가 외부에서 액세스 토큰을 얻어 특정 리소스에 접근 요청을 할 때 사용하는 방식
-
+```
 ![client authentication](https://user-images.githubusercontent.com/49216939/179352988-18b00d99-d6b0-4cb4-96bc-5a1071c4c0c8.png)
 
-```
 
 ## 그럼 OAUTH 2.0 이 앱에서 실질적으로 사용되는 순간은 ?
 
