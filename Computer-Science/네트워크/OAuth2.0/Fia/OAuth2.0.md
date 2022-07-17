@@ -27,7 +27,7 @@ Resource Owner, 자원 소유자
 - resource server 의 계정을 소유하고 있는 사용자
 
 Authorization Server, 권한 서버
-- Client Resource Server 가 가진 자원을 사용할 수 있게 인증 및 토큰을 발생시켜주는 서버
+- Client 가 Resource Server 가 가진 자원을 사용할 수 있게 인증 및 토큰을 발생시켜주는 서버
 
 Access Token
 - 자원 서버에 자원을 요청할 수 있는 token
@@ -74,7 +74,9 @@ Resource Owner Password Credentials Grant
 
 ```markdown
 Client Credentials Grant
-- 클라이언트가 외부에서 액세스 토큰을 얻어 특정 리소스에 접근 요청을 할 때 사용하는 방식
+- 클라이언트가 이미 자격증명을 가지고 있는 상태로, 이 자격 증명을 통해 access token 을 발급 받는 방식
+- 자격증명을 안전하게 보관할 수 있는 증명된 클라이언트가 있는 서비스에서 활용 가능
+- refresh token 은 사용할 수 없음
 ```
 ![client authentication](https://user-images.githubusercontent.com/49216939/179352988-18b00d99-d6b0-4cb4-96bc-5a1071c4c0c8.png)
 
