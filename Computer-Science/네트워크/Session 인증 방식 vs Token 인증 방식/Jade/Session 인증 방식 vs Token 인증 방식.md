@@ -26,6 +26,9 @@
     1. 사용자가 동시에 많이 접속을 하는 경우에 서버에 메모리 혹은 DB가 부족해지는 현상이 일어난다.
     2. 세션을 관리 할 때 자주 사용되는 쿠키는 단일 도메인 및 서브 도메인에서만 작동하도록 설계되어 있다. 따라서 쿠키를 여러 도메인에서 관리하는것은 번거로우며 CORS 문제가 생겨날 수 있다.
 ```
+
+![session-based-authentication](https://user-images.githubusercontent.com/61952198/179385901-6f623492-3078-4cbe-97c9-710204f6f39c.png)
+
   
 ## Token 인증 방식 (JWT - JASON Web Token)
 
@@ -68,6 +71,9 @@
     1. JWT 가 브라우저에 그대로 노출되어있으므로 위변조, 손상의 위험이 크다. (XSS 공격)
     2. 한번 발급된 토큰은 서버에서 제어가 불가능 하다. 만약 토큰이 공격자(해커)에게 탈취되었다면, 공격자는 토큰이 만료될 때까지 계속 공격 할 수 있다.
 ```
+
+![token-based-authentication](https://user-images.githubusercontent.com/61952198/179385904-be25a48b-c044-4391-bcb0-fbc6b70d24c7.png)
+
 
 <br>
 
