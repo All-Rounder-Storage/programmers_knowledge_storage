@@ -61,7 +61,7 @@ Authorization Code Grant
 ![AUTH CODE GRANT](https://user-images.githubusercontent.com/49216939/179352677-3bed27bc-0c11-4f28-937e-8f893250fe90.png)
 ```markdown
 Implicit Grant
-- 권한 코드를 교환하는 단계가 있다.
+- 권한 코드를 교환하는 단계가 없다.
 - access Token 을 즉시 반환 받아서 이를 인증에 이용하는 방식이다.
 ```
 ![implicit grant](https://user-images.githubusercontent.com/49216939/179352767-48a5ded1-113c-494c-bd0e-8aa504106210.png)
