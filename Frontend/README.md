@@ -41,6 +41,7 @@
 1. [실행 컨텍스트는 무엇일까요](./Javascript/실행_컨텍스트는_무엇일까요.md)
 2. [var, let, const는 무엇일까요](./Javascript/var_let_const는_무엇일까요.md)
 2. [클로저는 무엇일까요](./Javascript/클로저는_무엇일까요.md)
+4. [자바스크립트의 함수는 무엇일까요](./Javascript/자바스크립트의_함수는_무엇일까요.md)
 
 </div>
 </details>
