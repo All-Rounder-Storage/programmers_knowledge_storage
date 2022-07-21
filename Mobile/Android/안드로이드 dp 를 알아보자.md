@@ -43,8 +43,8 @@
 - xxxhdpi : 640dpi
 
 ## dpToPx / pxToDp 기본 공식
-- **dp = px * 기기의 dpi / 기본(160(mdpi))**
-- **px = dp * 기본(160(mdpi)) / 기기의 dpi**
+- **dp = px / (기기의 dpi / 기본(160(mdpi)))**
+- **px = dp * (기기의 dpi / 기본(160(mdpi)))**
 
 > 이 dpi 를 기준으로 px 을 바꿔가며 화면에 나타내기 때문에, 다른 크기의 기기에서도 일정한 크기의 화면이 나타날 수 있다.
 
