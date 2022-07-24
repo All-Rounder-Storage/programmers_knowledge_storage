@@ -8,8 +8,9 @@
    외부 서비스에서도 인증을 가능하게 한다 
 ```
 
-[사진 추가]
-<caption><a ref="https://auth.band.us/sign_up_form?next_url=https%3A%2F%2Fband.us%2F#">Band 회원가입 페이지</a> </caption>
+<img width="406" alt="Screen Shot 2022-07-24 at 9 54 55 AM" src="https://user-images.githubusercontent.com/61952198/180631127-7192bfc0-e1a9-40ad-8b03-2b896bca5899.png">
+
+<caption><a href="https://auth.band.us/sign_up_form?next_url=https%3A%2F%2Fband.us%2F#">Band 회원가입 페이지</a> </caption>
 
 ---
 
@@ -56,7 +57,8 @@
 
 ## OAuth 2.0 프로토콜 흐름도
 
-[flow 사진]
+<img width="530" alt="Screen Shot 2022-07-24 at 12 01 54 PM" src="https://user-images.githubusercontent.com/61952198/180631130-941699d9-c573-4a3d-9339-6004dbe9b49e.png">
+
 
 1. 클라이언트(Client)가 사용자(Resource Owner)에게 `Authorization` 을 요청 (request)한다
     - Authorization Request 는 사용자(Resource Owner)에게 바로 요청될 수 있으나, 보통 중개 역할을 하는 Authorization server를 통해 간접적으로 이루어진다.
@@ -83,7 +85,8 @@
 - 간편 로그인 기능에서 사용 되는 방식으로 가장 많이 쓰이고 기본이 되는 방식이다
 - `refresh token`의 사용이 가능한 방식이다
 
-[Authorization Code Grant]
+![Authorization Code Grant](https://user-images.githubusercontent.com/61952198/180631135-e1b127a9-d962-439b-8bb6-06170d878c33.png)
+
 
 - 권한 부여 승인 요청 시 `response_type`을 `token`으로 설정하여 요청한다
 - 클라이언트는 권한 서버에서 제공하는 로그인 페이지를 브라우저를 띄워 출력하고 사용자가 로그인을 하면 권한 서버는 권한 부여 승인 코드 요청 시 전달받은 `redirect_url` 로 `authorization code`를 전달한다
@@ -97,7 +100,8 @@
 - `refresh token`의 사용이 불가능한 방식이다
 - 권한 서버는 `client_secret`를 사용해 클라이언트를 인증하지 않고 `access token`을 획득하기 위한 절차가 간소화되어 응답성과 효율성은 높아지지만 보안 위험이 있다
 
-[Implicit Grant]
+![Implicit Grant](https://user-images.githubusercontent.com/61952198/180631139-9851bcc7-ee4c-4f29-b518-00480404b17b.png)
+
 
 - 권한 부여 승인 요청 시 `response_type`을 `token`으로 설정하여 요청한다
 - 클라이언트는 권한 서버에서 제공하는 로그인 페이지를 브라우저를 띄워 출력하고 사용자가 로그인을 하면 권한 서버는 권한 부여 승인 코드 요청 시 전달받은 `redirect_url` 로 `access token` 을 전달한다
@@ -108,7 +112,8 @@
 - 클라이언트가 자신의 서비스에서 제공하는 애플리케이션일 경우에만 사용한다
 - `refresh token`의 사용이 가능한 방식이다
 
-[Password Grant.png]
+![Password Grant](https://user-images.githubusercontent.com/61952198/180631141-5cfb9b47-ca85-4f82-bf9a-e27a29091370.png)
+
 
 ### 4. ****Client Credentials Grant**** (클라이언트 자격증명 승인 방식)
 
@@ -117,7 +122,8 @@
 - 클라이언트 자신이 관리하는 리소스 혹은 권한 서버에 해당 클라이언트를 위한 제한된 리소스 접근 권한이 설정되어 있는 경우 사용한다
 - `refresh token`의 사용이 불가능한 방식이다
 
-[Client Credentials.png]
+![Client Credentials](https://user-images.githubusercontent.com/61952198/180631142-88abb46a-3143-424a-8fb3-46d4a8741187.png)
+
 
 ### Reference
 
