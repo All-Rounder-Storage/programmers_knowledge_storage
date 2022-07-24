@@ -11,12 +11,15 @@
 ## cross-origin 이란 ? 
 - **프로토콜 / 도메인 / 포트 번호** 이 중에서 한개라도 다른 것을 의미 합니다.
 
-
 ## 왜 필요한가요 ? 
 - 이러한 규약 없이 모든 곳에서 데이터를 요청할 수 있을 경우에는, 하나의 사이트를 동일하게 만들어 버릴 수도 있습니다.
 - 동일한 화면 구성으로 로그인 했던 세션을 탈취해 정보 유출, 다른 사람의 정보 입력 등의 공격이 가능합니다.
   이러한 점을 불가능하게 만들기 위해서 브라우저에서 1차적으로 보호하고 필요한 경우에만 서버의 승인을 받아 사용할 수 있도록 하기 위함 입니다.
-  
+
+## 알고 가야 할 점
+- 서버는 CORS 를 위반하더라도 정상적인 응답을 내려줄 수 있다. 이때 응답의 파기 여부는 **브라우저에서 결정**한다.
+- CORS 는 브라우저의 구현 스펙이다. 해결하기 위해선 서버와의 협업이 필요하지만 브라우저 정책으로 인한 이슈이다. (서버적 결함이 아님)
+
 ## 동작 flow
 
 1. Simple Request 인 경우
@@ -73,7 +76,7 @@
 ## 안드로이드에서 CORS 상황이 발생하는 경우가 있나요 ? 
 - WebView 로 화면을 구성할 때 간혹 발생하는 경우가 있습니다.
     - ex) web 내부의 동작이 자바스크립트 인터페이스를 통해서 안드로이드와도 상호작용이 가능한 경우
-- 이때 WebView setting code 로 허용을 지정해줄 수 있습니다.
+- 이때 Android WebView setting code 로 허용을 지정해줄 수 있습니다. 하지만 근본적인 해결책은 아닙니다.
      
 ```kotlin
 val webViewSetting = webView.settings
@@ -83,3 +86,7 @@ val webViewSetting = webView.settings
 
 ## REFERENCE
 -[DOCUMENT](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#preflighted_requests)
+-[BLOG](https://kamang-it.tistory.com/602)
+-[BLOG](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-CORS-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%F0%9F%91%8F)
+-[BLOG](https://evan-moon.github.io/2020/05/21/about-cors/)
+
