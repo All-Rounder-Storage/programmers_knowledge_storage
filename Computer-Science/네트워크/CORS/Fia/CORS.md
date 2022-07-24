@@ -13,7 +13,7 @@
 
 ## 왜 필요한가요 ? 
 - 이러한 규약 없이 모든 곳에서 데이터를 요청할 수 있을 경우에는, 하나의 사이트를 동일하게 만들어 버릴 수도 있습니다.
-- 동일한 화면 구성으로 로그인 했던 세션을 탈취해 정보 유출, 다른 사람의 정보 입력 등의 공격이 가능합니다.
+- 동일한 화면 구성으로 로그인 했던 **세션을 탈취해 정보 유출, 다른 사람의 정보 입력 등의 공격**이 가능합니다.
     - 이러한 점을 불가능하게 만들기 위해서 브라우저에서 1차적으로 보호하고 **필요한 경우에만 서버의 승인을 받아 사용할 수 있도록 하기 위함** 입니다.
 
 ## 알고 가야 할 점
@@ -24,9 +24,9 @@
 
 1. Simple Request 인 경우
     - 이게 뭔가요 ? 
-        - 요청 메서드 는 GET / HEAD / POST 중 하나여야 합니다.
-        - Accept, Accept-Language, Content-Language, Content-Type, DPR, Downlink, Save-Data, Viewport-Width, Width 만 사용해야 합니다.
-        - Content type 은 application/x-www-form-urlencoded, multipart/form-data, text/plain 중 하나를 사용해야 합니다.
+        - 요청 메서드 는 **GET / HEAD / POST** 중 하나여야 합니다.
+        - **Accept, Accept-Language, Content-Language, Content-Type, DPR, Downlink, Save-Data, Viewport-Width, Width** 만 사용해야 합니다.
+        - Content type 은 **application/x-www-form-urlencoded, multipart/form-data, text/plain** 중 하나를 사용해야 합니다.
 
 - 서버에 요청 후 서버가 내려준 Access-Control-Allow-Origin 헤더 값을 확인하여, 교차 출처를 허용 여부를 결정 합니다.
 
@@ -38,7 +38,7 @@
         - 예비 요청은 OPTIONS 메서드로 실제 리소스 요청 전에 보내진다.
    
 - 예비 요청에 대한 서버의 Access-Control-Allow-Origin 헤더 값을 확인하여 교차 출처 허용 여부를 결정 합니다.
-- 예비 요청을 보냄으로써 리소스 낭비를 줄일 수 있고, CORS 대비 되지 않은 서버를 보호할 수 있습니다.
+- 예비 요청을 보냄으로써 **리소스 낭비를 줄일 수 있고, CORS 대비 되지 않은 서버를 보호**할 수 있습니다.
 
 ![preflight request](https://user-images.githubusercontent.com/49216939/179394800-0fcb88a6-f702-4a29-a5c7-297cca1f3c82.png)
 
@@ -57,7 +57,7 @@
 - 응답에 포함되는 헤더
     -  Access-Control-Allow-Origin
         - 브라우저가 해당 origin 이 자원에 접근할 수 있도록 허용합니다. 
-        - **값에 *(와일드 카드)은 credentials 이 없는 요청에도 모든 origin 에서 접근이 가능하도록 허용**
+        - 값에 *(와일드 카드)은 **credentials 이 없는 요청에도 모든 origin 에서 접근이 가능하도록 허용**
     
     - Access-Control-Expose-Headers 
         - 브라우저가 접근 가능한 서버 **화이트리스트 헤더**를 허용
@@ -80,8 +80,9 @@
 ## 안드로이드에서 CORS 상황이 발생하는 경우가 있나요 ? 
 - WebView 로 화면을 구성할 때 간혹 발생하는 경우가 있습니다.
     - ex) web 내부의 동작이 자바스크립트 인터페이스를 통해서 안드로이드와도 상호작용이 가능한 경우
+
 - 이때 Android WebView setting code 로 허용을 지정해줄 수 있습니다. 하지만 근본적인 해결책은 아닙니다.
-     
+
 ```kotlin
 val webViewSetting = webView.settings
     webViewSetting.setAllowFileAccessFromFileURLs(true)
@@ -89,11 +90,11 @@ val webViewSetting = webView.settings
 ```
 
 ## REFERENCE
--[DOCUMENT](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#preflighted_requests)
+- [DOCUMENT](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#preflighted_requests)
 
--[BLOG](https://kamang-it.tistory.com/602)
+- [BLOG](https://kamang-it.tistory.com/602)
 
--[BLOG](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-CORS-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%F0%9F%91%8F)
+- [BLOG](https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-CORS-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%F0%9F%91%8F)
 
--[BLOG](https://evan-moon.github.io/2020/05/21/about-cors/)
+- [BLOG](https://evan-moon.github.io/2020/05/21/about-cors/)
 
