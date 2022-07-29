@@ -97,4 +97,4 @@
   - ex. a/b 테스트 flag 저장, 자동 로그인 체크 여부, 마케팅 푸시 팝업 노출 여부, 일회성 팝업 노출 여부 등
   
 Reference
--[cookie vs session](https://www.javatpoint.com/session-vs-cookies)
+- [cookie vs session](https://www.javatpoint.com/session-vs-cookies)
