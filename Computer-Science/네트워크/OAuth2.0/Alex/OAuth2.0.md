@@ -349,7 +349,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdpaWJlb20iLCJuYW1lIjoiQWxleCIsInJ
 
 <br>
 
-## Access Token을 JWT 토큰을 사용할 때의 장점
+## Access Token을 JWT Token으로 사용할 때의 장점
 - 일반 토큰을 사용할 시에는 매 요청마다 토큰을 검증해야 한다
 - 토큰 검증은 인증 DB를 통해서 진행한다 -> 서버 부하 야기
 - JWT Token의 구성요소 중 하나인 Signature는 서명만으로도 바로 토큰의 무결성을 체크 할 수 있다
