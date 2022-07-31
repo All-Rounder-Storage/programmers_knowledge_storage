@@ -7,13 +7,15 @@ TCP 와 UDP는 OSI 표준모델과 TCP/IP 모델의 전송 계층 (Transport Lay
 
 - 전송 계층은 송신자와 수신자를 연결하는 통신 서비스를 제공하고 IP에 의해 전달되는 패킷의 오류를 검사하며 재전송 요구 제어등을 담당하는 계층이다. 즉, **송신자와 수신자를 연결하여 신뢰성 있는 데이터를 전송할 수 있게 해주는 계층이다**
 
-[tcp:ip&osi 사진]
+![tcp:ip osi](https://user-images.githubusercontent.com/61952198/182029580-399c3a74-5a74-49d2-a0b9-647f7d40502d.png)
+
 
 <br>
 
 ## TCP (Transmission Control Protocol)
 
-[tcp 사진]
+![tcp](https://user-images.githubusercontent.com/61952198/182029584-f4d11522-42f2-4232-a64f-0d1bc9e84590.png)
+
 
 - 데이터를 메세지 형태로 보내기 위하여 IP와 함께 사용하는 프로토콜이다
     - IP: 데이터의 배달을 처리한다
@@ -43,7 +45,8 @@ TCP 와 UDP는 OSI 표준모델과 TCP/IP 모델의 전송 계층 (Transport Lay
 
 ## UDP (User Datagram Protocol)
 
-[udp 사진]
+![udp](https://user-images.githubusercontent.com/61952198/182029589-6951397c-27ed-403a-b5bf-60a8bcd8f500.png)
+
 
 - 데이터를 데이터그램 (독립적인 관계를 지니는 패킷) 단위로 처리하는 프로토콜이다
 - UDP는 `비연결형 서비스`로서 연결 없이 통신이 가능하며 상대가 데이터를 받았는지 확인하지 않고 일방적으로 통신한다 (데이터 전송을 보장하지 않는다)
