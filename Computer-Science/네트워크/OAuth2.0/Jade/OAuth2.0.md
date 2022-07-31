@@ -65,7 +65,7 @@
 2. 클라이언트(Client)가 사용자(Resource Owner)의 인증을 나타내는 `credential` 즉, `authorization grant` 를 받는다
 3. 클라이언트(Client)는 `authorization grant` 을 가지고 `authorization server` 에  `access token` 을 요청한다
 4. `authorization server` 는 `authorization grant` 가 유효한지 확인하고 `authorization grant` 가 유효하다면 `access token` 을 발급한다
-5. 클라이언트(Client)는 부여 받은 `access token` 을 가지고 인가된 상태를 나타내며 `resource server` 로 사용자(Resource Owner)의 보호된 자원을 요청한다
+5. 클라이언트(Client)는 부여 받은 `access token` 을 가지고 `resource server` 로 부터 사용자(Resource Owner)의 보호된 자원 및 인가 정보룰 요청한다
 6. `resource server` 는 `access token` 이 유효한지 확인하고 유효하다면 클라이언트(Client)의 요청을 수행한다
 
 ---
@@ -88,7 +88,7 @@
 ![Authorization Code Grant](https://user-images.githubusercontent.com/61952198/180631135-e1b127a9-d962-439b-8bb6-06170d878c33.png)
 
 
-- 권한 부여 승인 요청 시 `response_type`을 `token`으로 설정하여 요청한다
+- 권한 부여 승인 요청 시 `response_type`을 `code`로 설정하여 요청한다
 - 클라이언트는 권한 서버에서 제공하는 로그인 페이지를 브라우저를 띄워 출력하고 사용자가 로그인을 하면 권한 서버는 권한 부여 승인 코드 요청 시 전달받은 `redirect_url` 로 `authorization code`를 전달한다
 - `authorization code`는 권한 서버에서 제공하는 API를 통해 `access token`으로 교환된다
 
