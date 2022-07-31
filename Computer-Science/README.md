@@ -13,9 +13,20 @@
 
 
 ## 💻 Progress
-- 주제별로 각자 공부한 내용을 정리하여 작성합니다.
-- 해당 주제에 관련하여 공통된 면접질문을 정하고, 각자의 답변을 작성합니다.
-- 매주 발표를 통해 서로의 지식을 공유하며 놓쳤던 부분을 매꿉니다.
+- 3개의 주제를 묶어서 한싸이클로 설정하고 3주간 3명의 멤버가 각자 할당된 그 주의 맞는 주제를 공부합니다.
+    - 1주차 (Alex: 1, Jade: 2, Fia: 3)
+        ```markdown
+        💡 예시를 들어봅니다
+        
+        - Alex: 1. HTTP 프로토콜 특징 및 HTTP vs HTTPS
+        - Jade: 2. HTTP 메서드
+        - Fia: 3. HTTP 응답코드
+        ```
+    - 2주차 (Alex: 2, Jade: 3, Fia: 1)
+    - 3주차 (Alex: 3, Jade: 1, Fia: 2)
+- 각 싸이클의 첫 번째 순서인 멤버가 해당 주제에 관련하여 공통된 관련 면접 질문을 정합니다.
+- 주제별로 각자 공부한 내용 및 관련 면접 질문 답변을 정리하여 작성합니다.
+- 3주에 한 번씩 발표를 통해 서로의 지식을 공유하며 놓쳤던 부분을 메꿉니다.
 - 새로운 주제가 있을 경우 자유롭게 추가합니다.
 - 매주 1개 이상의 포스팅을 목표로 합니다.
 
@@ -35,7 +46,10 @@
                 - [관련 면접질문 답변](링크)
             - Jade
                 - [설명글](링크)
-                - [관련 면접질문 답변](링크)            
+                - [관련 면접질문 답변](링크)
+            - Fia
+                - [설명글](링크)
+                - [관련 면접질문 답변](링크)
         
     ```
 - 폴더 구조
@@ -43,11 +57,14 @@
     네트워크
         - HTTP 특징 및 HTTP vs HTTPS
             - Alex
-                - [Alex] HTTP 특징 및 HTTP vs HTTPS.md
-                - [Alex] 면접질문 답변.md 
+                - HTTP 특징 및 HTTP vs HTTPS.md
+                - 면접질문 답변.md 
             - Jade
-                - [Jade] HTTP 특징 및 HTTP vs HTTPS.md
-                - [Jade] 면접질문 답변.md 
+                - HTTP 특징 및 HTTP vs HTTPS.md
+                - 면접질문 답변.md 
+            - Fia
+                - HTTP 특징 및 HTTP vs HTTPS.md
+                - 면접질문 답변.md 
     ```
 
 
@@ -123,7 +140,9 @@
 <div markdown="1">
 
 - 관련 면접질문
-  1. 쿠키와 세션은 언제 사용해야 적합한지 비교 설명해주세요
+    1. 쿠키와 세션은 언제 사용해야 적합한지 비교 설명해주세요.
+    2. 쿠키와 세션을 이용한 로그인 방식을 설명해주세요.
+    3. 쿠키와 세션에 대해 설명해주세요. (N사 면접질문)
 
 </div>
 </details>
@@ -151,13 +170,49 @@
   2. 사용자가 웹 브라우저를 통해 서버에 이미지를 요청해서 사용자에게 보여주기까지 과정을 설명해주세요
   3. TCP vs UDP를 비교 설명해주세요
   4. 3-Way handshake & 4-Way handshake에 대해 간략하게 설명해주세요
-  - TCP 통신은 종료 시에도 3-Way handshake 사용하나요?
   
 
 </div>
 </details>
 
 
+
+<details>
+<summary>TCP vs UDP</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+
+</div>
+</details>
+
+
+<details>
+<summary>로드 밸런싱</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+
+</div>
+</details>
+
+
+<details>
+<summary>Synchronous, Asynchronous / Blocking, Non-Blocking</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+
+</div>
+</details>
+
+<br>
 
 ### 운영체제
 
@@ -179,13 +234,46 @@
 <div markdown="1">
 
 - 관련 면접질문
-  1. DeadLock의 발생 조건과 DeadLock을 깨기 위해서 어떻게 해야하나요?
+  1. DeadLock의 발생 조건과 DeadLock을 깨기 위한 방법은 어떤게 존재하나요?
 
 </div>
 </details>
 
 
+<details>
+<summary>CPU 스케쥴링</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+</div>
+</details>
+
+<details>
+<summary>세마포어 / 뮤텍스</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+</div>
+</details>
+
+<details>
+<summary>인터럽트 처리</summary>
+<div markdown="1">
+
+- 관련 면접질문
+  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+
+</div>
+</details>
+
+<br>
+
 ### 자료구조
 
+<br>
 
 ### 데이터베이스
