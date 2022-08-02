@@ -1,7 +1,9 @@
 <!-- 
     PR 제목 예시 
         [Folder Name | Name] - 포스팅 제목
-        (ex) [Backend | Alex] 객체지향, 그 속으로
+        ex1) [Backend | Alex] 객체지향, 그 속으로
+        ex2) [Computer-Science | Alex] CORS
+
 
     하단 "작성글 링크"에서 해당 안되는 템플릿은 지워주세요!
 -->
