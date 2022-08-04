@@ -190,11 +190,15 @@
 - Q. 김치찌개를 만들어야 하는데 무슨 재료가 필요하지 ?
 
 `JIT`
+
 ![JIT](https://user-images.githubusercontent.com/49216939/182871467-81a61099-462d-4d9a-94f1-6b8020a57e58.jpg)
+
 - 필요해보이는 것만 일단 준비
 
 `AOT`
+
 ![AOT](https://user-images.githubusercontent.com/49216939/182871378-0174fea6-367e-478c-8806-5877dc661da6.jpg)
+
 - 필요한 것은 모두 준비하고 손질까지 완료
 
 [reference](https://www.charlezz.com/?p=42686)
