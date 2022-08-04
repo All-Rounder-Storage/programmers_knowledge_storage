@@ -201,6 +201,6 @@
 
 - 필요한 것은 모두 준비하고 손질까지 완료
 
-[reference](https://www.charlezz.com/?p=42686)
-[reference](https://medium.com/@logishudson0218/android-apk%EC%9D%98-%EA%B5%AC%EC%84%B1%EA%B3%BC-%EC%83%88%EB%A1%9C%EC%9A%B4-app-bundle-%EB%B0%A9%EC%8B%9D-274b1a4cfb62)
-[document](https://source.android.com/devices/tech/dalvik?hl=ko)
+- [reference](https://www.charlezz.com/?p=42686)
+- [reference](https://medium.com/@logishudson0218/android-apk%EC%9D%98-%EA%B5%AC%EC%84%B1%EA%B3%BC-%EC%83%88%EB%A1%9C%EC%9A%B4-app-bundle-%EB%B0%A9%EC%8B%9D-274b1a4cfb62)
+- [document](https://source.android.com/devices/tech/dalvik?hl=ko)
