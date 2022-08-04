@@ -75,6 +75,7 @@
 ### AAB 란 ?
 - **Android App Bundle** 의 약자로 .aab 형식의 파일
 - 2018년 구글에서 발표한 새로운 형식의 배포 파일로 구글이 제공하는 Dynamic Delivery 를 지원 받을 수 있다.
+- 하나의 통 apk 가 아닌 모듈 식으로 분리된 apk 가 여러개 생성, 사용자의 설정에 따라 조각조각 나뉜 apk 가 모여 하나의 앱을 구성
 - AAB 파일로 기기에 직접 설치는 불가능하다.
 
 `근데 APK 도 있는데 왜 AAB 가 등장했나요 ?`
@@ -92,10 +93,25 @@
 ![AAB](https://user-images.githubusercontent.com/49216939/182872285-9a3da2ba-a0fc-4c66-859d-ad0362ae68cf.png)
 
 `base/ , feature1/, feature2/`
-- 각각의 모듈을 대표하는 최상위 디렉터리
+- 각각의 모듈을 대표하는 최상위 폴더
+`BUNDLE-METADATA/`
+- 플레이 스토어, signing, dex files, proguard mappings 등의 정보를 담고 있는 메타 파일들의 집합
 
+`Module Protocol Buffer(*.pb) files`
+- 각각의 모듈 정보에 대한 메타데이터를 플레이 스토어에 제공하는 파일
 
-### APK 와 AAB 차이점
+`manifest/`
+- 각 모듈의 AndroidManifest.xml 파일을 담아두는 폴더
+
+`dex/` 
+- 각 모듈의 dex files 를 담아두는 디렉터리
+
+`res/ , lib/ , assets/`
+- 기존 APK 방식과 동일한 구조로 되어 있는 폴더
+- App Bundle 을 업로드할 때, 플레이 스토어에서 설치될 디바이스 설정에 맞는 파일/패키지/디렉터리를 검사
+
+`root/` 
+- APK 의 루트 파일이 담기는 폴더
 
 ### 안드로이드의 가상 머신 ?
 - 안드로이드는 초창기에 JVM 대신 **DVM**을 사용했습니다.
