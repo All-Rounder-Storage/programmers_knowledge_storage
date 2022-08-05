@@ -52,7 +52,7 @@
           - cross-origin 요청에는 자격 증명 정보가 담기지 않는데, 이를 허용하여 인증된 요청을 사용하도록 하는 방법(보안 강화)
           - 자격증명이 담긴 header 사용을 서버 측에서 허용하겠음을 명시해야 한다.
      - header 에 **credentials** 옵션을 추가해서, cross origin 요청 시 자격 증명 정보를 보낼 수 있습니다.
-        - credentials : **include** -> 출처 불문 모든 요청에 인증 정보 담음
+        - credentials : **same-origin** -> 출처 불문 모든 요청에 인증 정보 담음
         - credentials : **include** -> 출처 불문 모든 요청에 인증 정보 담음
         - credentials : **omit** -> 모든 요청에 인증 정보 담을 수 없음
      
