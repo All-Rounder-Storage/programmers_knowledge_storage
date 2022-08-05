@@ -1,15 +1,12 @@
-# CORS
-
-<br />
-
-## CORS (Cross Origin Resource Sharing, 교차 출처 리소스 공유)란?
+# CORS (Cross Origin Resource Sharing, 교차 출처 리소스 공유)란?
 
 - 브라우저는 전통적으로 SOP(Same Origin Policy, 동일 출처 정책)를 가지고 있다.
     - SOP란?
         - 내가 지금 접속해 있는 사이트 (클라이언트라 하자) 에서 외부 사이트 (서버라 하자)로 어떤 특정 리소스를 요청을 했을 때 **출처 (Origin)** 가 같은 경우에만 그 리소스를 받아보고 사용할 수 있게끔 만들어둔 보안 정책이다.
     - 출처(Origin)란?
 
-      [URL 이미지]
+      ![origin](https://user-images.githubusercontent.com/61952198/183011963-22247546-8796-4ce4-95e7-643a11d225d9.jpeg)
+
         - 출처는 우리가 흔히 볼 수 있는 URL의 `Protocol`, `Host`, `Port` 로 구성돼있다.
             - **같은 출처** (**Same-Origin**) : 내가 접속한 사이트와 다른 사이트의 Protocol, Host, Port 가 **전부 다 동일**
             - 교차 출처, 즉 **다른 출처** (**Cross-Origin**) : 내가 접속한 사이트와 다른 사이트의 Protocol, Host, Port 중 **하나라도 다른 경우**
@@ -79,7 +76,7 @@
 - 단순 요청은 이 다음으로 다룰 Preflighted Requests (예비 요청) 을 보내지 않고 서버에 바로 본 요청을 보내는 방법이다.
     - 위에서 설명했던 CORS 기본 흐름과 같은 흐름이다.
 
-[simple request image]
+![simple](https://user-images.githubusercontent.com/61952198/183012137-17716433-5a60-41c2-8789-528d24f31147.jpeg)
 
 - 클라이언트에서 서버에 `Origin` 값을 보냈을 때 서버는 이에 대한 응답으로 `Access-Control-Allow-Origin`  값을 보내주고 브라우저가 `CORS` 정책 위반여부를 검사한다.
 - 단순 요청은 예비 요청이 필요없는 말 그대로 단순 요청이나, 단순 요청이 일어나는데에는 아래와 같은 조건이 존재하며 **모두** 충족되어야 단순 요청이 가능해진다.
@@ -98,7 +95,7 @@
 - 가장 많이 마주치게 되는 시나리오로 브라우저가 **본 요청을 보내기 이전에 Preflighted Requests (예비 요청) 을 먼저** 보내는 경우이다.
 - 예비 요청을 미리 보냄으로써 본 요청을 보낼 서버에서 어떤 출처를 허용하고 어떤 메서드를 허용하는지 미리 확인할 수 있다.
 
-[preflighted request image]
+![preflighted](https://user-images.githubusercontent.com/61952198/183012157-d9201f56-d5ad-490c-aa1b-a59b9fcb8431.jpeg)
 
 - 예비 요청에는 HTTP method 중 `OPTIONS`가 사용된다.
     - OPTIONS 의 HEADERS 에는 아래와 같은 값이 보내진다.
@@ -108,7 +105,7 @@
     Access-Control-Request-Method : 본 요청에서 보내질 HTTP METHOD
     Access-Control-Request-Headers : 본 요청에서 보내질 HTTP의 HEADERS
     
-    - 실제 본 요청에서는 **Access-Control-Request-*** 값들은 포함되지 않는다
+    - 실제 본 요청에서는 **Access-Control-Request-XXX** 값들은 포함되지 않는다
     ```
 
 - 서버는 이 예비 요청에 대한 응답으로 아래와 같은 값을 돌려보낸다.
@@ -215,14 +212,16 @@
         - 프록시를 사용하지 않았을 때 기본적인 webpack dev server 와 API 요청의 흐름은 아래와 같다. (이미지 출처 : [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/devtools/webpack-dev-server.html#%ED%94%84%EB%A1%9D%EC%8B%9C-proxy-%EC%84%A4%EC%A0%95))
             - localhost:8080(클라이언트) -> domain.com (서버) : **CORS Error**
 
-       [noProxy img]
+       ![noProxy](https://user-images.githubusercontent.com/61952198/183012197-363e0bde-b1a1-4c98-8c08-8cf7df1ec4d7.png)
+
 
         - 프록시 설정 후
             - 브라우저에서는 localhost:8080/api/login 으로 리소스를 요청한다.
             - 중간에서 설정된 프록시 서버가 domain.com 서버로 위장한다.
             - domain.com (서버) 서버에서는 같은 도메인에서 날라 온 요청으로 인식하여, CORS Error가 뜨지 않는다.
 
-       [proxy img]
+       ![proxy](https://user-images.githubusercontent.com/61952198/183012201-a6edd438-86bc-41d6-8c49-a7e17d55ac26.png)
+
 
 
 ### Reference
