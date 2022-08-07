@@ -23,7 +23,7 @@
 
 ### Programming Basic
 <details>
-<summary>Java Deep Dive</summary>
+<summary>Java Deep Dive (5개)</summary>
 <div markdown="1">
 
 #### Java의 정석
@@ -87,7 +87,7 @@
 ### Web Basic
 
 <details>
-<summary>Spring Principle</summary>
+<summary>Spring Principle (2개)</summary>
 <div markdown="1">
 
 1. [MVC 패턴, 그 속으로](SpringPrinciple/MVC%20패턴,%20그%20속으로.md)
