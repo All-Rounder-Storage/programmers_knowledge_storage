@@ -2,10 +2,11 @@
 
 
 ## 👥 Members
-| Backend | Frontend | Mobile                                                                                                       |
-| --- | --- |--------------------------------------------------------------------------------------------------------------|
+| [Backend](Backend) | [Frontend](Frontend) | [Mobile](Mobile) |
+| --- | --- |-------------------------------------------------------------------------------------------------------------|
 [<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100">](https://github.com/giibeom)| [<img src="https://avatars.githubusercontent.com/u/61952198?v=4" width="100">](https://github.com/dbwjd5864) | [<img src="https://avatars.githubusercontent.com/u/49216939?v=4" width="100">](https://github.com/leeHana21) |
 
+<br>
 
 ## ✨ About Programmers Knowledge Storage
 
@@ -15,6 +16,8 @@
 - 다른 사람의 리뷰를 통해 나 한사람의 관점에서 벗어나 여러 시선에서 바라보기를 연습해보아요 👀
 - 마지막으로 의무감이 아닌 프로그래밍을 애정하는 마음으로 storage를 꾸준히 가꿔가주세요 😊
 
+<br>
+
 ## 💻 Progress
 
 - PR은 요일 상관없이 자유롭게 올리며, 리뷰어들은 매주 일요일까지 모든 리뷰를 마치고 approve를 진행합니다.
@@ -23,7 +26,8 @@
 - 매주 1개의 포스팅을 목표로 하며, 월 최대 2번까지 작성 미루기가 가능합니다.
     - 해당 규칙을 지키지 못한 달에는 대면 발표를 진행합니다. (대여 장소 비용까지 지불합니다!)
 
-    
+<br>
+
 ## 📚 Posting 및 PR
 
 - Posting 제목
@@ -42,25 +46,38 @@
     ```markdown
     [Folder Name | Name] - 포스팅 제목
     
+    주제에 대한 간략한 설명
     - 간략한 포스팅 내용
+  
+    작성글 링크 (md 파일)
     - [편하게보기](Fork한 repo 내 md 파일 링크)
-    
+  
+  --------------------------------------------------------------------
     ex1)
     [Backend | Alex] - Spring DI, 그 속으로
     
+    주제에 대한 간략한 설명
     - Spring에 핵심기술인 의존성주입(DI)에 대한 원리와 장점을 설명합니다.
+  
+    작성글 링크 (md 파일)
     - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     
     ex2)
     [Mobile | Fia] - Flutter에 대해 알아보자
     
+    주제에 대한 간략한 설명
     - 크로스 플랫폼에 대응하기 위한 기술인 Flutter에 관한 정리 내용입니다.
+  
+    작성글 링크 (md 파일)
     - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     
     ex3)
     [Frontend | Jade] - Javascript의 실행 컨텍스트란 무엇일까요?
-    
+
+    주제에 대한 간략한 설명
     - Javascript의 모든 작동원리의 베이스가 되는 실행 컨텍스트에 대해 알아봅니다.
+  
+    작성글 링크 (md 파일)
     - [편하게보기](Fork한 repo 내 md파일 주소를 걸어주세요!)
     ```
 

@@ -23,12 +23,14 @@
 
 ### Programming Basic
 <details>
-<summary>Java Deep Dive</summary>
+<summary>Java Deep Dive (5개)</summary>
 <div markdown="1">
 
 #### Java의 정석
 1. [Java, 그 속으로](Java/Java의%20정석/Java,%20그%20속으로.md)
 2. [객체 지향, 그 속으로](Java/Java의%20정석/객체%20지향,%20그%20속으로.md)
+3. [변수와 메서드, 그 속으로](Java/Java의%20정석/변수와%20메서드,%20그%20속으로.md)
+4. [오버로딩&오버라이딩 그리고 상속, 그 속으로](Java/Java의%20정석/오버로딩&오버라이딩%20그리고%20상속,%20그%20속으로.md)
 
 
 #### Java 8
@@ -85,7 +87,7 @@
 ### Web Basic
 
 <details>
-<summary>Spring Principle</summary>
+<summary>Spring Principle (2개)</summary>
 <div markdown="1">
 
 1. [MVC 패턴, 그 속으로](SpringPrinciple/MVC%20패턴,%20그%20속으로.md)
