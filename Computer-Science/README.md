@@ -2,15 +2,19 @@
 
 
 ## 👥 Collaborator
-[<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100">](https://github.com/giibeom) | [<img src="https://avatars.githubusercontent.com/u/61952198?v=4" width="100">](https://github.com/dbwjd5864) | [<img src="https://avatars.githubusercontent.com/u/49216939?v=4" width="100">](https://github.com/leeHana21) |
+Alex | Jade | Fia|
 |:--------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:| :------------------------------------------------------------------------------------------------------------:|
+[<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100">](https://github.com/giibeom) | [<img src="https://avatars.githubusercontent.com/u/61952198?v=4" width="100">](https://github.com/dbwjd5864) | [<img src="https://avatars.githubusercontent.com/u/49216939?v=4" width="100">](https://github.com/leeHana21) |
 
+
+<br>
 
 ## 📝 Objective
 - 프로그래밍의 근본인 CS 지식을 전반적으로 공부합니다.
-- 단순한 검색으로 답변 찾기가 아닌 실제 CS 지식들의 이해를 우선시합니다.
+- 단순한 검색으로 답변 찾기가 아닌 계속해서 "왜?"를 던지며 실제 CS 지식들의 이해를 우선시합니다.
 - 발표를 통해 지식을 공유하며 의사소통의 능력을 꾸준히 향상시킵니다.
 
+<br>
 
 ## 💻 Progress
 - 3개의 주제를 묶어서 한싸이클로 설정하고 3주간 3명의 멤버가 각자 할당된 그 주의 맞는 주제를 공부합니다.
@@ -30,6 +34,7 @@
 - 새로운 주제가 있을 경우 자유롭게 추가합니다.
 - 매주 1개 이상의 포스팅을 목표로 합니다.
 
+<br>
 
 ## 📂 Structure
 
@@ -68,6 +73,7 @@
     ```
 
 
+<br>
 
 ## 📖 Contents
 
