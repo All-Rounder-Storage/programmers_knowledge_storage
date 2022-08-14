@@ -117,7 +117,8 @@
     - [반이중 방식(half-duplex)](#half-duplex)
     - [전이중 방식(full Duplex)](#full-duplex)
     
-### 6계층 표현 계층 (Presentation Layer)
+### Presentation Layer
+> 6계층 표현 계층
 
 `개념`
 
@@ -132,8 +133,8 @@
 -  응용 프로그램이나 네트워크를 위해 데이터를 표현 하는 것
         - ex. [EBCDIC](#EBCDIC) 인코딩 문서를 [ASCII](#ASCII) 로 인코딩 된 파일로 바꿔주는 것
 
-### 7계층 응용 계층
-> Application Layer
+### Application Layer
+> 7계층 응용 계층
 
 `개념`
 
@@ -170,7 +171,7 @@
 - 라우터 : IP 주소 등과 같은 레이어 3에 있는 주소를 참조하여 네트워크 주소가 서로 다른 장비를 연결할 때 사용하는 장치
 - 허브 : 다수의 pc 와 장치를 연결해 네트워크를 만들어 주는 장치
 
-- [관련 본문으로 돌아가기](#physical-layer)
+- [본문으로 돌아가기](#physical-layer)
 
 ### 브릿지 스위치
 - 브릿지 : 허브보다 한 등급 위의 장비로 허브는 나눌 수 없는 콜리전 도메인을 나눠주는 역할
@@ -182,7 +183,7 @@
 
 - [브릿지, 스위치 동작 방식의 자세한 설명](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=shheroes&logNo=220413412117)
 
-- [관련 본문으로 돌아가기](#2---)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### CRC
 - **cyclic redundancy check - 순환 중복 검사**
@@ -195,13 +196,13 @@
               - 나머지가 Non zero -> 에러 발생 간주
               - 참고자료 : [CRC 자세한 설명](http://blog.skby.net/%EC%88%9C%ED%99%98-%EC%A4%91%EB%B3%B5-%EA%B2%80%EC%82%AC-crc-cyclic-redundancy-check/)
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### 이더넷
 - 컴퓨터 네트워크 기술의 하나로 LAN 에서 가장 많이 활용되는 기술 규격
     - 네트워크에 연결된 각 기기들이 48비트 길이의 고유 맥 주소를 가지고, 상호 간에 데이터를 주고 받을 수 있도록 만들어짐
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)    
+- [본문으로 돌아가기](#datalink-layer) 
 
 ### HDLC ADCCP
 - HDLC(High-level Data Link Control)
@@ -214,70 +215,70 @@
     - 비트 지향 데이터 링크 계층 프로토콜
     - HDLC 와 기능적으로 동일하지만, ADCCP 에는 REST 프레임이 포함 되어 있고 번호가 없는 형식인 점이 차이점 이다.
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### 패킷 스위칭 네트워크
 - 송신 측에서 모든 메세지를 일정한 크기의 패킷으로 나누어 전송하고, 수신 측에서 이를 원래의 메세지로 조립 하는 개념
     - 전송 시에는 네트워크 상태에 따라 다른 경로로 보내게 됨
     - 데이터 그램 방식, 가상 회선 방식 2가지가 존재
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### LLC
 - Logical Link Control(논리 링크 제어)의 약어로 데이터 링크 계층 내 LAN 프로토콜에 관련된 부계층 중 하나
     - 여러 다양한 매체 접속 제어 방식 간의 차이를 보완해주는 역할
     - [더 자세한 개념 설명](http://www.ktword.co.kr/test/view/view.php?m_temp1=113)
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### ALOHA
 - 하와이 대학교에서 개발된 컴푸터 네트워킹 시스템으로 무선 패킷 데이터 네트워크를 최초로 입증
 - 시분할 다중 접속 기술을 사용해 위성-지구 사이의 무선 전송을 하는 프로토콜
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [본문으로 돌아가기](#datalink-layer)
 
 ### 라우팅
 - 어떤 네트워크 내에서 데이터를 최적의 경로를 선택하는 과정을 뜻 함
     - 최적의 경로는 최단거리 일수도, 가장 빠른 시간일 수도 있음
     - 패킷, 네트워크 주소(목적지 주소), 매트릭(목적지 주소까지의 소모비용), 다음 게이트 웨이(패킷을 전송할 다음 주소), 인터페이스(다음 게이트 웨이가 존재하는 인터페이스)로 구성 되어짐
-- [관련 본문으로 돌아가기](#3---network-layer)
+- [본문으로 돌아가기](#network-layer)
 
 ### 흐름 제어
 - 송신 측이 수신 측의 처리 속도 보다 더 빨리 데이터를 보내지 못하도록 제어 해주는 것
     - 수신측에서 송신 측의 발송 데이터 양 혹은 속도를 제한(송신 측 억제로 이를 이용할 경우 데이터 넘침을 송신 측에 통보하는 피드백 메커니즘 필요)
     - [더 자세한 개념 설명](http://www.ktword.co.kr/test/view/view.php?m_temp1=392)
     
-- [관련 본문으로 돌아가기](#3---network-layer)
+- [본문으로 돌아가기](#network-layer)
 
 ### 오류 제어
 - 데이터 전송 중 발생되는 에러를 검출하고 보정하는 메커니즘
     - [더 자세한 개념 설명](http://www.ktword.co.kr/test/view/view.php?nav=2&no=1299&sh=%EC%98%A4%EB%A5%98+%EC%A0%9C%EC%96%B4)
 
-- [관련 본문으로 돌아가기](#3---network-layer)
+- [본문으로 돌아가기](#network-layer)
 
 ### segmentation
 - 네트워크를 여러개의 세그먼트나 서브넷으로 나누는 아키텍처 방식, 나눠진 각각이 소규모 네트워크의 역할을 함
     - 네트워크 관리자는 트래픽 흐름을 제어할 수 있음
     - 보안이 강화
     
-- [관련 본문으로 돌아가기](#3---network-layer))
+- [본문으로 돌아가기](#network-layer)
 
 ### interNetworking
 - 2개 이상의 서로 다른 네트워크간 통신이 가능하도록 하는 개념
     - 여러 네트워크 계층 위에서 표준화를 따르도록 해 서로 다른 네트워크 간 통신 지원
 
-- [관련 본문으로 돌아가기](#3---network-layer)
+- [본문으로 돌아가기](#network-layer)
 
 ### TCP
 - Transmission Control Protocol 의 약어로 서버와 클라이언트 간에 데이터를 신뢰성 있게 전달하기 위해 만들어진 프로토콜
   
-- [관련 본문으로 돌아가기](#4---transmission-control-layer)
+- [본문으로 돌아가기](#transmission-control-layer)
 
 ### 시퀀스 넘버 기반의 오류 제어 방식 사용
 - 데이터의 송수신을 한번에 하지 않고 패킷 단위로 작업하는 과정에서, 데이터의 순서 보장이나 중복 제거를 위해 시퀀스를 사용하는 방식을 이용하는 통신 개념
     - ex. TCP 패킷 헤더에 seq & ack 값 추가
 
-- [관련 본문으로 돌아가기](#4---transmission-control-layer)
+- [본문으로 돌아가기](#transmission-control-layer)
 
 ### half duplex
 - 반이중 방식
@@ -289,7 +290,7 @@
 - 2 대의 단말기가 데이터를 송수신 하기 위해 각각 독립된 회선을 사용하는 통신 방식
     - 전화망, 고속 데이터 통신
   
-- [관련 본문으로 돌아가기](#5---session-layer)
+- [본문으로 돌아가기](#session-layer)
 
 ### EBCDIC
 - 8 비트 문자열 인코딩 방식
@@ -297,7 +298,7 @@
 ### ASCII
 - 7비트 문자열 인코딩 방식
 
-- [관련 본문으로 돌아가기](#6---presentation-layer)
+- [본문으로 돌아가기](#presentation-layer)
 
 ### FTP
 -  File Transfer Protocol 의 약자로 인터넷을 통해 파일을 전송하는 프로토콜
@@ -334,7 +335,7 @@
 ### SNMP
 -  Simple Network Management Protocol(간이 망 관리 프로토콜)의 약어로 UDP / IP 를 사용하여 이더넷 연결을 통해 네트워크 관리 작업을 수행하는 응용 계층 프로토콜
 
-- [관련 본문으로 돌아가기](#7---application-layer)
+- [본문으로 돌아가기](#application-layer)
 
 ### reference
 - [reference](https://shlee0882.tistory.com/110)
