@@ -16,7 +16,8 @@
 
 ## 7계층의 종류
 
-### 1계층 물리 계층 (Physical Layer)
+### 1계층 물리 계층 
+> Physical Layer
 
 `개념`
 
@@ -30,7 +31,8 @@
 
 - 데이터를 전달만 할 뿐 데이터의 결함, 에러 여부 등은 확인하지 않는다.
 
-### 2계층 데이터 링크 계층 (DataLink Layer)
+### 2계층 데이터 링크 계층
+>  DataLink Layer
 
 `개념`
 
@@ -54,7 +56,8 @@
 - 가장 잘 알려진 예는 [이더넷](#이더넷)이며, 이 외에도 [HDLC, ADCCP 같은 point To point 프로토콜](#HDLC-ADCCP), [패킷 스위칭 네트워크](#패킷-스위칭-네트워크), [LLC](#LLC), [ALOHA](#ALOHA) 같은 근거리 네트워크 용 프로토콜 이 존재함
 
 
-### 3계층 네트워크 계층 (Network Layer)
+### 3계층 네트워크 계층
+> Network Layer
 
 `개념`
 
@@ -78,7 +81,8 @@
 - 데이터를 연결하는 다른 네트워크를 통해 전달해 인터넷이 가능하게 만드는 계층
 
 
-### 4계층 전송 계층 (Transmission Control Layer)
+### 4계층 전송 계층
+> Transmission Control Layer
 
 `개념`
 
@@ -96,7 +100,8 @@
   
 - [시퀀스 넘버 기반의 오류 제어 방식 사용](#시퀀스-넘버-기반의-오류-제어-방식-사용)
 
-### 5계층 세션 계층 (Session Layer)
+### 5계층 세션 계층
+> Session Layer
 
 `개념`
 
@@ -127,7 +132,8 @@
 -  응용 프로그램이나 네트워크를 위해 데이터를 표현 하는 것
         - ex. [EBCDIC](#EBCDIC) 인코딩 문서를 [ASCII](#ASCII) 로 인코딩 된 파일로 바꿔주는 것
 
-### 7계층 응용 계층 (Application Layer)
+### 7계층 응용 계층
+> Application Layer
 
 `개념`
 
@@ -164,7 +170,7 @@
 - 라우터 : IP 주소 등과 같은 레이어 3에 있는 주소를 참조하여 네트워크 주소가 서로 다른 장비를 연결할 때 사용하는 장치
 - 허브 : 다수의 pc 와 장치를 연결해 네트워크를 만들어 주는 장치
 
-- [관련 본문으로 돌아가기](#1---physical-layer)
+- [관련 본문으로 돌아가기](#1--)
 
 ### 브릿지 스위치
 - 브릿지 : 허브보다 한 등급 위의 장비로 허브는 나눌 수 없는 콜리전 도메인을 나눠주는 역할
@@ -176,7 +182,7 @@
 
 - [브릿지, 스위치 동작 방식의 자세한 설명](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=shheroes&logNo=220413412117)
 
-- [관련 본문으로 돌아가기](#2----datalink-layer)
+- [관련 본문으로 돌아가기](#2---)
 
 ### CRC
 - **cyclic redundancy check - 순환 중복 검사**
