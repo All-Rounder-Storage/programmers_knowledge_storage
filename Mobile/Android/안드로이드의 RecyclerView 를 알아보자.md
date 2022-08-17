@@ -46,19 +46,19 @@
 - **LinearLayoutManager** : 항목을 **1차원 목록**으로 정렬
     - 텀블벅 앱에서 캡쳐
 
-<img src="https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png" width="340" height="720"  align="center">
+<p align="center"><img src="https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png" width="340" height="720"></p>
 
 
 - **GridLayoutManager** : 모든 항목을 **2차원 grid** 로 정렬
     - 텀블벅 앱에서 캡쳐
-    
-<img src="https://user-images.githubusercontent.com/49216939/184869783-41869f2d-9778-4266-bc2d-502e192d4524.png" width="340" height="720"  align="center">
+
+<p align="center"><img src="https://user-images.githubusercontent.com/49216939/184869783-41869f2d-9778-4266-bc2d-502e192d4524.png" width="340" height="720"></p>
 
 
 - **StaggeredGridLayoutManager** : GridLayoutManager 와 동일하나, **항목의 크기가 동일할 필요가 없는 경우**에 사용
     - 런데이 앱에서 캡쳐
 
-<img src="https://user-images.githubusercontent.com/49216939/184869842-52660164-c7c1-466b-af26-6514faa29691.png" width="340" height="720"  align="center">
+<p align="center"><img src="https://user-images.githubusercontent.com/49216939/184869842-52660164-c7c1-466b-af26-6514faa29691.png" width="340" height="720"></p>
 
   
 - **※ iOS 유저라 이해를 돕기 위한 캡쳐는 iOS 로 대체 합니다....;**
