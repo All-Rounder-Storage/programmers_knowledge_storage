@@ -9,18 +9,19 @@
   
 - 화면이 작은 모바일 환경에서 리스트는 거의 필수적이기에 안쓰는 앱은 거의 없다고 봐도 무방하다.
 
-- 리스트를 그리기 위해 안드로이드가 제공하는 기능으로는 ListView 와 RecyclerView 가 있는데, ListView 의 성능을 개선하고, 확장해서 나온 것이 RecyclerView 이다.
+- 리스트를 그리기 위해 안드로이드가 제공하는 기능으로는 ListView 와 RecyclerView 가 있다.
+    - ListView 의 성능을 개선하고, 확장해서 나온 것이 RecyclerView 이다.
 
 - 필요에 의해 RecyclerView 대신 ListView 를 사용할 때가 있지만, 대부분 RecyclerView 를 이용하여 리스트를 표현한다.
-    - RecyclerView 가 ListView 를 확장하여 만들어졌으며, 훨씬 좋은 성능을 보이기 때문에 주로 사용한다.
+    - RecyclerView 가 ListView 보다 훨씬 좋은 성능을 보이기 때문에 주로 사용한다.
 
 ## RecyclerView 특징
 - 화면에 그려진 View 를 재사용하는 특징이 있다.
 - ListView 는 기본 제공하는 Adapter class 를 이용할 수 있으나, RecyclerView 는 RecyclerView.Adapter 상속받아서 개발자가 직접 구현해야 한다.
 
 ### 재사용 이요 ?
-> 아래의 사진이 보여주는 것처럼, ListView 는 데이터가 1000개라고 할 경우 모두 그리기 위해 View 를 1000개 만들지만
-> RecyclerView 는 화면에 나타난 View 만 그리고, 화면 밖으로 사라진 View 는 다음 항목을 그릴 때 재사용 한다.
+> - 아래의 사진이 보여주는 것처럼, ListView 는 데이터가 1000개라고 할 경우 모두 그리기 위해 View 를 1000개 만들지만
+> - RecyclerView 는 화면에 나타난 View 만 그리고, 화면 밖으로 사라진 View 는 다음 항목을 그릴 때 재사용 한다.
 
 ![RecyclerView](https://user-images.githubusercontent.com/49216939/184875700-9d109c1a-b2bc-4fd8-b4be-1c5e593f113e.png)
 
@@ -28,33 +29,37 @@
 
 1. Adapter
     - 리스트에 나타날 **항목 View** 와 **데이터**를 연결하여 화면에 나타내는 역할을 담당한다.
-    - RecyclerView 를 이용해 리스트를 나타낼 때 가장 핵심적인 기능을 하는 class 이다.
-    - 리스트의 추가, 삭제, 수정 등을 이 클래스 내에서 메서드를 만들어 처리할 수 있다.
-    - 개발자가 직접 정의하여 구현해야한다.
+    - RecyclerView 를 이용해 리스트를 나타낼 때 **가장 핵심적인 기능을 하는 class** 이다.
+    - **리스트의 추가, 삭제, 수정** 등을 이 클래스 내에서 메서드를 만들어 처리할 수 있다.
+    - 개발자가 **직접 정의**하여 구현해야한다.
 
 2. ViewHolder
-    - 화면에 표시될 항목의 레이아웃를 저장하는 객체 이다.
-    - Adapter 에 의해 관리되며, 이미 생성되어있는 경우 만들어져 있는 뷰홀더를 재활용하여 화면에 나타낸다.
-    - ViewHolder 가 만들어질 때 타입을 주어 서로 다른 아이템 레이아웃을 한 RecyclerView 내에서 표현할 수 있다.
+    - 화면에 표시될 항목의 **레이아웃를 저장하는 객체** 이다.
+    - **Adapter 에 의해 관리**되며, 이미 생성되어있는 경우 만들어져 있는 **뷰홀더를 재활용**하여 화면에 나타낸다.
+    - ViewHolder 가 만들어질 때 **타입**을 주어 서로 다른 아이템 레이아웃을 한 RecyclerView 내에서 표현할 수 있다.
 
 3. LayoutManager
-- RecyclerView 에 할당해줘야 하는 클래스로써 리스트의 항목이 어떤 식으로 정렬이 될지 LayoutManager 클래스를 통해 결정 된다.
+- RecyclerView 에 할당해줘야 하는 클래스로, 리스트의 항목이 어떤 식으로 정렬이 될지 LayoutManager 클래스를 통해 결정 된다.
 - 모든 매니저 클래스에 스크롤을 가로로 할지, 세로로 할지 지정할 수 있다.
 - 기본 제공 매니저 종류
-   1. LinearLayoutManager : 항목을 1차원 목록으로 정렬
-        - ![linearLayoutManager](https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png)
+    1. **LinearLayoutManager** : 항목을 **1차원 목록**으로 정렬
+        ![linearLayoutManager](https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png)
         - 텀블벅 앱에서 캡쳐
-   2. GridLayoutManager : 모든 항목을 2차원 grid 로 정렬
-        - ![GridLayoutManager](https://user-images.githubusercontent.com/49216939/184869783-41869f2d-9778-4266-bc2d-502e192d4524.png)
+   
+    2. **GridLayoutManager** : 모든 항목을 **2차원 grid** 로 정렬
+        ![GridLayoutManager](https://user-images.githubusercontent.com/49216939/184869783-41869f2d-9778-4266-bc2d-502e192d4524.png)
         - 텀블벅 앱에서 캡쳐
-   3. StaggeredGridLayoutManager : GridLayoutManager 와 동일하나, 항목의 크기가 동일할 필요가 없는 경우에 사용
-        - ![StaggeredGridLayoutManager](https://user-images.githubusercontent.com/49216939/184869842-52660164-c7c1-466b-af26-6514faa29691.png)
-        - 런데이 앱에서 캡쳐
     
-- ※ iOS 유저라 이해를 돕기 위한 캡쳐는 iOS 로 대체 합니다....;
+    3. **StaggeredGridLayoutManager** : GridLayoutManager 와 동일하나, **항목의 크기가 동일할 필요가 없는 경우**에 사용
+        ![StaggeredGridLayoutManager](https://user-images.githubusercontent.com/49216939/184869842-52660164-c7c1-466b-af26-6514faa29691.png)
+        - 런데이 앱에서 캡쳐
+   
+ 
+- **※ iOS 유저라 이해를 돕기 위한 캡쳐는 iOS 로 대체 합니다....;**
 
-> 만약 깜빡하고 매니저를 할당하지 않으면 ?
-> 화면에 리스트가 출력되지 않고 아무것도 없는 빈화면이 나온다..꼭 잊지말고 넣어야 한다 !
+```markdown
+- 만약 깜빡하고 매니저를 할당하지 않으면 ?
+    - 화면에 리스트가 출력되지 않고 아무것도 없는 빈화면이 나온다..꼭 잊지말고 넣어야 한다 !
 
 - 그때 안드로이드 개발자의 처참한 심정은 아래와 같다...
 
@@ -66,12 +71,13 @@
 　　 　　┘|
 
 - ps. 하지만 더 슬플 때는 매니저 어댑터 뷰홀더 API 연결까지 했는데 화면에 안나올 때...ㅜ
+```
 
-> 그럼 이제 !
-> RecyclerView 를 만드는 코드를 보며 좀 더 자세히 알아보자.
+```markdown
+- 그럼 이제 ! RecyclerView 를 만드는 코드를 보며 좀 더 자세히 알아보자.
+- 코드는 google 제공 예제 앱에서 발췌, 필요에 의해 조금씩 수정하여 작성 합니다.
+```
 
-
-> 코드는 google 제공 예제 앱에서 발췌, 필요에 의해 조금씩 수정하여 작성 합니다.
 1. xml 에 RecyclerView layout 과 내부 항목을 나타낼 layout 을 작성 합니다.
 ```xml
 <!--activity_main.xml-->
@@ -169,7 +175,8 @@
         private val ivImage: ImageView = itemView.findViewById(R.id.iv_image)
 
         fun bind(myElement: MyElement) {
-            tvText.text = myElement.name ?: "fia" /* ?: -> 엘비스 프레슬리 연산자라고 하며 값이 null 일 경우 대체 값을 지정해줄 수 있다.*/
+            /* ?: -> 엘비스 프레슬리 연산자라고 하며 값이 null 일 경우 대체 값을 지정해줄 수 있다.*/
+            tvText.text = myElement.name ?: "fia"
             ivImage.setImageResource(if(myElement.hasProfileUrl) R.drawble.img_smile else R.drawble.img_default)
         }
     }
@@ -208,7 +215,7 @@ class MyActivity : AppCompatActivity() {
 - 물론 페이징 처리나, API 에서 가져온 데이터를 붙이려면 이것보단 조금 복잡해지긴 할 것이다. 하지만 코드의 양부터 적긴 하다.
 
 ```dart
- @override
+@override
 Widget build(BuildContext context) {
   List<String> myData = [
     "되게",
