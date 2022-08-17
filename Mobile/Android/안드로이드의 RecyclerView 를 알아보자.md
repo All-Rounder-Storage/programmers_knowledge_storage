@@ -43,7 +43,7 @@
 - 모든 매니저 클래스에 스크롤을 가로로 할지, 세로로 할지 지정할 수 있다.
 - 기본 제공 매니저 종류
     1. **LinearLayoutManager** : 항목을 **1차원 목록**으로 정렬
-        ![linearLayoutManager](https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png){: width="240" height="360"}
+        <img src="https://user-images.githubusercontent.com/49216939/184869667-5fd9e29f-f177-4af0-a8e7-406efe89cf27.png" width="240" height="720">
         - 텀블벅 앱에서 캡쳐
    
     2. **GridLayoutManager** : 모든 항목을 **2차원 grid** 로 정렬
