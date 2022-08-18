@@ -43,8 +43,10 @@
 2. [클로저는 무엇일까요](./Javascript/클로저는_무엇일까요.md)
 4. [자바스크립트의 함수는 무엇일까요](./Javascript/자바스크립트의_함수는_무엇일까요.md)
 5. [자바스크립트의 비동기 프로그래밍은 무엇일까요](./Javascript/자바스크립트의_비동기_프로그래밍은_무엇일까요.md)
-5. [프로미스는 무엇일까요](./Javascript/프로미스는_무엇일까요.md)
-5. [async/await은 무엇일까요](./Javascript/async_await은_무엇일까요.md)
+6. [프로미스는 무엇일까요](./Javascript/프로미스는_무엇일까요.md)
+7. [async/await은 무엇일까요](./Javascript/async_await은_무엇일까요.md)
+8. [자바스크립트의 객체는 무엇일까요](./Javascript/자바스크립트의_객체는_무엇일까요.md)
+9. [자바스크립트의 this는 무엇일까요](./Javascript/자바스크립트의_this는_무엇일까요.md)
 
 </div>
 </details>
