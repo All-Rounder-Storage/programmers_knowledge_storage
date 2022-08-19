@@ -126,7 +126,7 @@ this의 가장 큰 특징 중에 하나는 **this 바인딩(식별자와 값을 
 
     ```jsx
     function outer(){
-        console.log('outer 함수의 this: '. this); // window
+        console.log('outer 함수의 this: ', this); // window
         function inner(){
             console.log('inner 함수의 this: ', this); // window
         }   
@@ -201,6 +201,7 @@ this의 가장 큰 특징 중에 하나는 **this 바인딩(식별자와 값을 
 - 하지만 중첩 함수 또는 콜백 함수는 외부 함수를 돕는 헬퍼의 역할을 하고자 하는 경우가 대부분이기 때문에 중첩 함수 또는 콜백 함수의 this와 외부 함수의 this가 일치하지 않는 것은 헬퍼의 역할을 수행해내기 힘들게 된다.
     - 따라서 메서드 내부의 중첩 함수나 콜백 함수의 this 바인딩을 외부 함수의 this 바인딩과 일치시키는 방법이 존재한다!   
     <br />
+    
     1. **this 바인딩을 that에다가 할당하기**
 
     ```jsx
@@ -249,7 +250,7 @@ this의 가장 큰 특징 중에 하나는 **this 바인딩(식별자와 값을 
         showName(){
             // **화살표 함수 내부의 this**는 **상위 스코프의 this**를 가리킨다.
             setTimeout(() => {
-                console.log(that.name); // 유정
+                console.log(this.name); // 유정
             }, 100);
         }
     };
