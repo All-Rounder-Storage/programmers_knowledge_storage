@@ -215,7 +215,9 @@ Alex | Jade | Fia|
 <div markdown="1">
 
 - 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+  1. Synchronous, Asynchronous 의 차이점을 설명하세요.
+  2. Blocking, Non-Blocking 의 차이점을 설명하세요.
+  3. Synchronous, Blocking / Asynchronous, Non-Blocking 의 차이점을 설명하세요.   
 
 
 </div>
