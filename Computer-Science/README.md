@@ -172,10 +172,8 @@ Alex | Jade | Fia|
 <div markdown="1">
 
 - 관련 면접질문
-  1. URL 에 [www.example.com](https://www.google.com/) 을 쳤을 때 일어나는 일들을 설명해주세요
-  2. 사용자가 웹 브라우저를 통해 서버에 이미지를 요청해서 사용자에게 보여주기까지 과정을 설명해주세요
-  3. TCP vs UDP를 비교 설명해주세요
-  4. 3-Way handshake & 4-Way handshake에 대해 간략하게 설명해주세요
+  1. URL 에 [www.example.com](https://www.google.com/) 을 쳤을 때 일어나는 일들을 설명해주세요 
+  2. 3-Way handshake & 4-Way handshake에 대해 간략하게 설명해주세요
   
 
 </div>
@@ -203,7 +201,9 @@ Alex | Jade | Fia|
 <div markdown="1">
 
 - 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+  1. 많은 트래픽이 발생했을 때 서버의 부하를 분산시키기 위해 어떤 방법을 활용할 수 있나요 ?
+  2. scale-up / scale-out 의 의미를 서버의 관점에서 설명해주세요.
+  3. L4 로드 밸런싱 과 L7 로드 밸런싱의 다른점을 비교하여 설명해주세요.
 
 
 </div>
@@ -215,7 +215,9 @@ Alex | Jade | Fia|
 <div markdown="1">
 
 - 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
+  1. Synchronous, Asynchronous 의 차이점을 설명하세요.
+  2. Blocking, Non-Blocking 의 차이점을 설명하세요.
+  3. Synchronous, Blocking / Asynchronous, Non-Blocking 의 차이점을 설명하세요.   
 
 
 </div>
