@@ -18,7 +18,7 @@
 
 - 아마 필자처럼 **Synchronous, Asynchronous / Blocking, Non-Blocking** 검색을 해봤다면 아래의 사진은 한번쯤 만나봤을 것이다.
 
-  [이미지]
+  ![sync,asyn,block,non-block](https://user-images.githubusercontent.com/61952198/188845930-db88d9eb-921e-4daf-8003-92859bb7bdf6.png)
 
   이미지 출처: [https://interconnection.tistory.com/141](https://interconnection.tistory.com/141)
 
@@ -69,7 +69,9 @@
 
 - **Synchronous**에서 무엇을 필자가 말한 상황에 대입해보면 **Synchronous는 한 작업의 완료와 다음 작업의 수행이 동시에 발생한다로 볼 수 있고, Asynchronous는 한 작업의 완료와 다음 작업의 수행이 동시에 발생하지 않는다로 볼 수 있다.**
 
-  ![이미지]
+
+![sync,async](https://user-images.githubusercontent.com/61952198/188846733-181b41ac-a1da-4b6f-8e3b-8e1b3c2f6764.png)
+
 
 - 이렇게 한 작업의 완료와 다음 작업의 수행이 동시에 일어난다는 것은 `다음으로 수행돼야 하는 작업`이 `이전 작업의 완료 여부에 대해서 관심`을 가지고 지켜보고 있다라는 말이 된다.
 - 또한, 어떤 작업이 끝나고 다음 작업을 실행하는 것이기 때문에 `작업들이 어떠한 순서를 가지고 진행됨`을 의미하게 되는 것이다.
@@ -107,9 +109,8 @@
     ```
 
 
-![블락킹.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/41f6ddf0-bf1b-40ba-b720-a9732fb662b9/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5%E1%86%BC.png)
-
-![논블락킹.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/241b1428-6f3c-4f0a-83ba-aaae1d5261bd/%E1%84%82%E1%85%A9%E1%86%AB%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%86%A8%E1%84%8F%E1%85%B5%E1%86%BC.png)
+![블락킹](https://user-images.githubusercontent.com/61952198/188846097-b651775c-0edc-4d14-ada4-08946a129b95.png)
+![논블락킹](https://user-images.githubusercontent.com/61952198/188846194-369ee57b-7277-4853-8c2a-40b7a2277fc6.png)
 
 이렇게 관점이 다른 동기, 비동기 / 블로킹, 논블로킹은 어떻게 같이 사용 되게 될까?
 
@@ -296,7 +297,7 @@ study();
 - 이 Select 함수에 대해 간단하게 설명하자면, 이 함수가 바로 작업을 블로킹하고 비동기 방식이기 때문에 여러 개의 I/O를 동시에 감시하며 처리할 수 있다.
     - 자신이 감시하고 있는 파일들에서 I/O가 발생하는지를 확인하며 Select 함수가 종료되면 감시하던 파일들 중에서 처리해야할 파일의 개수를 반환해 주면 블로킹이 풀리게 되는 방식이다.
 
-  ![비동기,블로킹.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6850828b-32fc-4113-a103-2ab6e2bc41e3/%E1%84%87%E1%85%B5%E1%84%83%E1%85%A9%E1%86%BC%E1%84%80%E1%85%B5%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8F%E1%85%B5%E1%86%BC.png)
+  ![비동기,블로킹](https://user-images.githubusercontent.com/61952198/188846523-45f1e904-0018-41f4-bee2-8421ccd38109.png)
 
 <br />
 
