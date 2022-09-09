@@ -14,7 +14,7 @@
 
 | Github | Blog |
 |------|-----|
- [<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100" height="100">](https://github.com/giibeom) | [<img src="https://tistory4.daumcdn.net/tistory/4721195/attach/f2dd826f6a374fcab50ea9ab418c5bd6" width="100" height="100">](https://beomdrive.tistory.com/) |
+ [<img src="https://avatars.githubusercontent.com/u/59248326?v=4" width="100" height="100">](https://github.com/giibeom) | [<img src="https://tistory4.daumcdn.net/tistory/4721195/attach/dccf747a6e634069b0f964abd1f324f1" width="100" height="100">](https://beomdrive.tistory.com/) |
 
 
 <br>
@@ -152,4 +152,3 @@
 
 </div>
 </details>
-
