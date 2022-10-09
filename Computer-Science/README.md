@@ -225,6 +225,34 @@ Alex | Jade | Fia|
 
 <br>
 
+### 자료구조
+
+<details>
+<summary>순차 리스트(Sequential List) / 연결 리스트(Linked List)</summary>
+</details>
+
+<details>
+<summary>스택(Stack)</summary>
+</details>
+
+<details>
+<summary>큐(Queue)</summary>
+</details>
+
+<details>
+<summary>데큐(Deque)</summary>
+</details>
+
+<details>
+<summary>트리(Tree)</summary>
+</details>
+
+<details>
+<summary>그래프(Graph)</summary>
+</details>
+
+<br>
+
 ### 운영체제
 
 <details>
@@ -280,10 +308,6 @@ Alex | Jade | Fia|
 
 </div>
 </details>
-
-<br>
-
-### 자료구조
 
 <br>
 
