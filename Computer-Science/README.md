@@ -225,6 +225,34 @@ Alex | Jade | Fia|
 
 <br>
 
+### 자료구조
+
+<details>
+<summary>순차 리스트(Sequential List) / 연결 리스트(Linked List)</summary>
+</details>
+
+<details>
+<summary>스택(Stack)</summary>
+</details>
+
+<details>
+<summary>큐(Queue)</summary>
+</details>
+
+<details>
+<summary>데큐(Deque)</summary>
+</details>
+
+<details>
+<summary>트리(Tree)</summary>
+</details>
+
+<details>
+<summary>그래프(Graph)</summary>
+</details>
+
+<br>
+
 ### 운영체제
 
 <details>
@@ -273,50 +301,6 @@ Alex | Jade | Fia|
 
 <details>
 <summary>인터럽트 처리</summary>
-<div markdown="1">
-
-- 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
-
-</div>
-</details>
-
-<br>
-
-### 자료구조
-
-<details>
-<summary>Stack & Queue</summary>
-<div markdown="1">
-
-- 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
-
-</div>
-</details>
-
-<details>
-<summary>Array & Linked List</summary>
-<div markdown="1">
-
-- 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
-
-</div>
-</details>
-
-<details>
-<summary>Graph & Tree & Heap</summary>
-<div markdown="1">
-
-- 관련 면접질문
-  1. 싸이클 첫번째 순서인 멤버가 관련 면접질문을 업로드합니다
-
-</div>
-</details>
-
-<details>
-<summary>Hash Table</summary>
 <div markdown="1">
 
 - 관련 면접질문
