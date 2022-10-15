@@ -7,11 +7,12 @@
 - Array와 Linked List에 차이가 무엇인가요?
 - Array와 Linked List의 조회, 삽입/삭제는 어떻게 이뤄지나요?
 
+
 자 그렇다면 우선 배열, Array에 대해서 먼저 알아보자
 
-## 배열 (Array)
+<br />
 
----
+## 배열 (Array)
 
 여러 데이터를 하나의 이름으로 그룹핑해서 관리하기 위해 사용된다.
 
@@ -22,6 +23,8 @@ example[0] = 'apple'; // Element(요소)
 example[1] = 'banana';
 example[2] = 'pear';
 ```
+
+<br />
 
 ### Array의 특징
 
@@ -34,6 +37,8 @@ example[2] = 'pear';
 - 관련된 data를 메모리상에 연속적, 순차적으로 저장한다.
 - 얼마만큼의 데이터를 저장할지 알고 있고, 조회를 많이 하게 된다면 Array를 사용한다.
 
+<br />
+
 ### 시간복잡도
 
 - 데이터 접근: O(1)
@@ -41,18 +46,22 @@ example[2] = 'pear';
 - 데이터 삽입/삭제: O(n)
     - 메모리상에 연속적으로 데이터들이 저장되어 있기 때문에, 데이터를 삽입 혹은 삭제할 때 기존 데이터들을 모두 한칸씩 움직여줘야 하기 때문에 O(n)의 시간복잡도를 가진다.
 
-## **리스트 (List)**
+<br />
 
----
+## **리스트 (List)**
 
 리스트는 선형으로 원소를 나열하는 구조이다.
 
 구현 방법에 따라 **순차 리스트(Sequential List)** 와 **연결 리스트(Linked List)** 로 나뉘어진다.
 
+<br />
+
 ### 1.  순차 리스트 (Sequential List)의 특징
 
 - 순차 리스트인 ArrayList는 Array를 사용한다.
 - 하지만 초기에 메모리에 크기를 지정 해줘야하는 Array와는 다르게 ArrayList는 크기를 지정하지 않는다.
+
+<br />
 
 ### 시간복잡도
 
@@ -64,6 +73,8 @@ example[2] = 'pear';
 <br />
 
 ---
+
+<br />
 
 ### 2.  연결 리스트 (Linked List)의 특징
 
@@ -86,25 +97,36 @@ example[2] = 'pear';
 
 Array, Array List, Linked List를 각각 알아봤으니 글의 처음에서 언급했던 필자가 실제로 면접질문으로 받아 보았던 Array와 Linked List의 차이점에 대해서도 정리해보고 글을 마무리 해보려한다.
 
+<br />
+
 ## Array와 Linked List
 
----
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/61952198/195973641-6d0ba6e9-9479-4105-b83b-d43a48f707d0.png">
+이미지 출처: https://codegym.cc/quests/lectures/questsyntax.level08.lecture05
 
-- Array는 메모리상에서 연속적으로 데이터를 저장하지만 Linked List는 메모리상에서는 불연속적이나 논리적인 연속성을 가진다.
-- 시간복잡도
+<br />
+<br />
+
+- **메모리상 데이터 저장**
+    - Array: 메모리상에서 연속적으로 데이터를 저장
+    - Linked List: 메모리상에서는 불연속적으로 데이터를 저장하나 논리적인 연속성을 가진다.
+- **시간복잡도**
     - 데이터 조회
         - Array: O(1)
         - Linked List: O(n)
     - 데이터 삽입/삭제
         - Array: O(n)
         - Linked List: O(1)
-- 저장할 데이터의 양을 알고 있으며 데이터 조회를 많이 할때는 Array를 활용한다. 반대로 저장할 데이터의 양이 정해져 있지 않고 데이터 삽입/삭제를 많이 할 때는 Linked List를 사용한다.
-- 메모리 할당
+- **메모리 할당**
     - **Array**는 **컴파일 단계**에서 메모리 할당이 일어난다. (Static Memory Allocation) ⇒ **Stack memory 영역**에 할당된다.
     - **Linked List**는 **런타임 단계**에서 새로운 Node가 추가될 때마다 메모리 할당이 일어난다. (Dynamic Memory Allocation) ⇒ **Heap 메모리 영역**에 할당된다.
+- 저장할 데이터의 양을 알고 있으며 데이터 조회를 많이 할때는 Array를 활용한다. 반대로 저장할 데이터의 양이 정해져 있지 않고 데이터 삽입/삭제를 많이 할 때는 Linked List를 사용한다.
+
+<br />
 
 ### Reference
 
 ---
 
 - [기출로 대비하는 개발자 전공면접 [CS 완전정복]](https://www.inflearn.com/course/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%A0%84%EA%B3%B5%EB%A9%B4%EC%A0%91-cs-%EC%99%84%EC%A0%84%EC%A0%95%EB%B3%B5)
+- [Data Structure(자료구조) - 리스트(List)](https://opentutorials.org/module/1335/8636)
